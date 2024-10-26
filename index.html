@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roads of the Caucasus Official Website</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
+    <nav id="side-menu" class="side-menu">
+        <a href="#about" data-lang-en="About the Game" data-lang-az="Oyun Haqqında" data-lang-ru="Об игре">About the Game</a>
+        <a href="#features" data-lang-en="Game Features" data-lang-az="Oyun Xüsusiyyətləri" data-lang-ru="Особенности игры">Game Features</a>
+        <a href="privacy-policy.html" data-lang-en="Privacy Policy" data-lang-az="Məxfilik Siyasəti" data-lang-ru="Политика конфиденциальности">Privacy Policy</a>
+        <a href="data-policy.html" data-lang-en="Data Policy" data-lang-az="Məlumat Siyasəti" data-lang-ru="Политика обработки данных">Data Policy</a>
+        <a href="#download" class="cta-button" data-lang-en="Download the Game" data-lang-az="Oyunu Yüklə" data-lang-ru="Скачать игру">Download the Game</a>
+    </nav>
+    
+    <header>
+        <div class="language-selector">
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="az">Azərbaycan</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
+        <div class="header-content">
+            <img src="logo.png" alt="Roads of the Caucasus Logo" class="game-logo">
+            <p class="description" data-lang-en="Explore the rugged beauty of the Caucasus Mountains. Master the roads, conquer the challenges, and drive to victory!"
+               data-lang-az="Qafqaz dağlarının sərt gözəlliyini kəşf edin. Yolları mənimsəyin, çətinlikləri dəf edin və zəfərə doğru sürün!"
+               data-lang-ru="Исследуйте суровую красоту Кавказских гор. Покоряйте дороги, преодолевайте испытания и мчитесь к победе!">
+               Explore the rugged beauty of the Caucasus Mountains. Master the roads, conquer the challenges, and drive to victory!
+            </p>
+            <a href="#download" class="cta-button" data-lang-en="Download Now" data-lang-az="İndi Yükləyin" data-lang-ru="Скачать сейчас">Download Now</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 data-lang-en="About the Game" data-lang-az="Oyun Haqqında" data-lang-ru="Об игре">About the Game</h2>
+        <p class="about-text" data-lang-en="Set in the breathtaking landscapes of the Caucasus, Roads of the Caucasus brings you a unique driving experience with a cultural twist. Customize cars, earn gold, and navigate thrilling terrains."
+           data-lang-az="Qafqazın nəfəs kəsici mənzərələrində yerləşən Roads of the Caucasus sizə mədəni fərqliliklə unikal bir sürücülük təcrübəsi təqdim edir. Avtomobilləri fərdiləşdirin, qızıl qazanın və həyəcan dolu yollarda səyahət edin."
+           data-lang-ru="На фоне захватывающих дух пейзажей Кавказа Roads of the Caucasus предлагает уникальный опыт вождения с культурным акцентом. Настраивайте автомобили, зарабатывайте золото и прокладывайте путь по захватывающим маршрутам.">
+           Set in the breathtaking landscapes of the Caucasus, Roads of the Caucasus brings you a unique driving experience with a cultural twist. Customize cars, earn gold, and navigate thrilling terrains.
+        </p>
+    </section>
+
+    <section id="features">
+        <h2 data-lang-en="Game Features" data-lang-az="Oyun Xüsusiyyətləri" data-lang-ru="Особенности игры">Game Features</h2>
+        <div class="feature">
+            <h3 data-lang-en="Stunning Visuals" data-lang-az="Göz Qamaşdıran Vizual Effektlər" data-lang-ru="Впечатляющая графика">Stunning Visuals</h3>
+            <p class="feature-text" data-lang-en="Immerse yourself in a beautifully crafted environment with high-quality graphics inspired by the Caucasus region."
+               data-lang-az="Qafqaz bölgəsindən ilham alan yüksək keyfiyyətli qrafikalarla gözəl bir mühitə dalın."
+               data-lang-ru="Погружайтесь в тщательно проработанный мир с высококачественной графикой, вдохновленной регионом Кавказа.">
+               Immerse yourself in a beautifully crafted environment with high-quality graphics inspired by the Caucasus region.
+            </p>
+        </div>
+        <div class="feature">
+            <h3 data-lang-en="Unique Car Collection" data-lang-az="Unikal Avtomobil Kolleksiyası" data-lang-ru="Уникальная коллекция автомобилей">Unique Car Collection</h3>
+            <p class="feature-text" data-lang-en="Choose from a range of cars and upgrade them to dominate the roads."
+               data-lang-az="Fərqli avtomobillər seçin və yolları fəth etmək üçün onları təkmilləşdirin."
+               data-lang-ru="Выбирайте из множества автомобилей и улучшайте их, чтобы покорить дороги.">
+               Choose from a range of cars and upgrade them to dominate the roads.
+            </p>
+        </div>
+        <div class="feature">
+            <h3 data-lang-en="Earn and Compete" data-lang-az="Qazanın və Yarışın" data-lang-ru="Зарабатывайте и соревнуйтесь">Earn and Compete</h3>
+            <p class="feature-text" data-lang-en="Collect gold, conquer challenges, and show your skills on the leaderboards!"
+               data-lang-az="Qızıl toplayın, çətinliklərin öhdəsindən gəlin və liderlər lövhəsində bacarıqlarınızı göstərin!"
+               data-lang-ru="Собирайте золото, преодолевайте испытания и демонстрируйте свои навыки в таблице лидеров!">
+               Collect gold, conquer challenges, and show your skills on the leaderboards!
+            </p>
+        </div>
+    </section>
+
+    <section id="download">
+        <h2 data-lang-en="Get the Game" data-lang-az="Oyunu Yüklə" data-lang-ru="Скачать игру">Get the Game</h2>
+        <p class="download-text" data-lang-en="Ready to hit the roads? Download Roads of the Caucasus now!"
+           data-lang-az="Yollara çıxmağa hazırsınız? Roads of the Caucasus oyununu indi yükləyin!"
+           data-lang-ru="Готовы к дорогам? Скачайте Roads of the Caucasus прямо сейчас!">
+           Ready to hit the roads? Download Roads of the Caucasus now!
+        </p>
+        <a href="https://play.google.com/" class="cta-button" data-lang-en="Download on Google Play" data-lang-az="Google Play-də Yükləyin" data-lang-ru="Скачать на Google Play">Download on Google Play</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Roads of the Caucasus. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('side-menu');
+            menu.classList.toggle('active');
+        }
+
+        function changeLanguage() {
+            const selectedLang = document.getElementById("language").value;
+            document.querySelectorAll("[data-lang-en]").forEach(element => {
+                element.textContent = element.getAttribute(`data-lang-${selectedLang}`);
+            });
+        }
+    </script>
+</body>
+</html>
